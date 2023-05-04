@@ -1,0 +1,16 @@
+BLEURT==0.0.2
+gensim==4.2.0
+glog==0.3.1
+ipython==8.13.2
+ir_measures==0.3.1
+networkx==2.8.7
+nltk==3.7
+numpy==1.21.2
+rank_bm25==0.2.2
+scikit_learn==1.2.2
+sentence_transformers==2.2.2
+spacy==3.0.0
+tensorflow==2.10.0
+torch==1.10.0
+tqdm==4.64.1
+transformers==4.20.1
