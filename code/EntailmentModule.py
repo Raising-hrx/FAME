@@ -690,12 +690,12 @@ def run(args):
 
     if args.module_training_type =='para_all':
         train_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/train.jsonl',
+            '..//data/wiki_match/V1/Substitution/train.jsonl',
+            '..//data/wiki_match/V1/Conjunction/train.jsonl',
+            '..//data/wiki_match/V1/Ifthen/train.jsonl',
+            '..//data/wiki_match/V1/Substitution/train.jsonl',
+            '..//data/wiki_match/V1/Conjunction/train.jsonl',
+            '..//data/wiki_match/V1/Ifthen/train.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -716,12 +716,12 @@ def run(args):
         train_dataset = pattern_dataset_all(train_data_files,task_prefixes,loading_types)
 
         test_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -744,9 +744,9 @@ def run(args):
 
     elif args.module_training_type =='para_ded':
         train_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/train.jsonl',
+            '..//data/wiki_match/V1/Substitution/train.jsonl',
+            '..//data/wiki_match/V1/Conjunction/train.jsonl',
+            '..//data/wiki_match/V1/Ifthen/train.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -761,9 +761,9 @@ def run(args):
         train_dataset = pattern_dataset_all(train_data_files,task_prefixes,loading_types)
 
         test_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -780,9 +780,9 @@ def run(args):
 
     elif args.module_training_type =='para_abd':
         train_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/train.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/train.jsonl',
+            '..//data/wiki_match/V1/Substitution/train.jsonl',
+            '..//data/wiki_match/V1/Conjunction/train.jsonl',
+            '..//data/wiki_match/V1/Ifthen/train.jsonl',
         ]
         task_prefixes = [
             'abductive substitution:',
@@ -797,9 +797,9 @@ def run(args):
         train_dataset = pattern_dataset_all(train_data_files,task_prefixes,loading_types)
 
         test_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
         ]
         task_prefixes = [
             'abductive substitution:',
@@ -816,12 +816,12 @@ def run(args):
 
     elif args.module_training_type =='etree_all':
         train_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -842,12 +842,12 @@ def run(args):
         train_dataset = Etree_step_dataset_all(train_data_files,task_prefixes,loading_types,add_HQA=args.add_HQA)
 
         test_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -870,9 +870,9 @@ def run(args):
 
     elif args.module_training_type =='etree_ded':
         train_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
         ]
         task_prefixes = [
             'deductive substitution:',
@@ -888,9 +888,9 @@ def run(args):
 
         if args.prefixes_eval == False:
             test_data_files = [
-                '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-                '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-                '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
+                '..//data/wiki_match/V1/Substitution/test.jsonl',
+                '..//data/wiki_match/V1/Conjunction/test.jsonl',
+                '..//data/wiki_match/V1/Ifthen/test.jsonl',
             ]
             task_prefixes = [
                 'deductive substitution:',
@@ -907,7 +907,7 @@ def run(args):
 
         else:
             test_data_files = [
-                '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/dev.jsonl',
+                '..//data/EntailmentModuleData/dev.jsonl',
             ]
             loading_types = [
                 'deduction',
@@ -923,9 +923,9 @@ def run(args):
 
     elif args.module_training_type =='etree_abd':
         train_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.substitution.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.conjunction.jsonl',
+            '..//data/EntailmentModuleData/Train_pseudo/pseudo.if-then.jsonl',
         ]
         task_prefixes = [
             'abductive substitution:',
@@ -940,9 +940,9 @@ def run(args):
         train_dataset = Etree_step_dataset_all(train_data_files,task_prefixes,loading_types,add_HQA=args.add_HQA)
 
         test_data_files = [
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Substitution/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Conjunction/test.jsonl',
-            '/home/hongruixin/Reasoning/RLReason/data/wiki_match/V1/Ifthen/test.jsonl',
+            '..//data/wiki_match/V1/Substitution/test.jsonl',
+            '..//data/wiki_match/V1/Conjunction/test.jsonl',
+            '..//data/wiki_match/V1/Ifthen/test.jsonl',
         ]
         task_prefixes = [
             'abductive substitution:',
@@ -1014,7 +1014,7 @@ def run(args):
     lr_scheduler = create_scheduler(optimizer, args)
     
     log.info("loading BLEURT")
-    bleurt_scorer = score.BleurtScorer("/home/hongruixin/Reasoning/bleurt/bleurt-large-512") 
+    bleurt_scorer = score.BleurtScorer("../bleurt/bleurt-large-512") 
 
     log.info("start training")
     global_iter = 0

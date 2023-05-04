@@ -19,8 +19,7 @@ def load_entailmentbank(task='task_1', split='train', version='v3', base_path = 
     assert version in ['v2', 'v3', None]
     
     if base_path is None:
-        base_path = '/home/hongruixin/Reasoning/RLReason/data'
-        # base_path = '/home/hongruixin/trk/Reasoning/RLReason/data'
+        base_path = '../data'
 
 
     if version:

@@ -1,6 +1,6 @@
-cd /home/hongruixin/Reasoning/FAME/code
+cd FAME/code
 
-base_dir="/home/hongruixin/Reasoning/FAME"
+base_dir="FAME"
 code_dir="${base_dir}/code"
 
 # ----- data -----
@@ -16,7 +16,7 @@ retriever_path_or_name="${base_dir}/exp/retriever/v1"
 entailment_module_exp_dir="${base_dir}/exp/EntailmentModule/IK3tEKPo/"
 
 # ----- verifier -----
-bleurt_path="/home/hongruixin/Reasoning/bleurt/bleurt-large-512"
+bleurt_path="../bleurt/bleurt-large-512"
 step_scorer_exp_dir="${base_dir}/exp/step_scorer/z9TPfknY/"
 
 # ----- important paramaters -----

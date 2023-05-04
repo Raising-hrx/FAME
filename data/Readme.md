@@ -20,10 +20,10 @@ Data
 │   │   ├── task_2
 │   │   └── task_3
 │   └── supporting_data
-│       ├── preprocessed_corpus.json                               # the EntailmentBank corpus
+│       └── preprocessed_corpus.json                               # the EntailmentBank corpus
 │
 └── TeachableEntailmentWriterData                                  # data for training the verifier (https://allenai.org/data/entailer)
-    ├── processed_step_data
-    │   ├── step.dev.v1.jsonl
-    │   └── step.train.v1.jsonl
+    └── processed_step_data
+        ├── step.dev.v1.jsonl
+        └── step.train.v1.jsonl
 ```

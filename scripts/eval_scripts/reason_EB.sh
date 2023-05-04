@@ -1,6 +1,6 @@
-cd /home/hongruixin/Reasoning/FAME/code
+cd FAME/code
 
-base_dir="/home/hongruixin/Reasoning/FAME"
+base_dir="FAME"
 code_dir="${base_dir}/code"
 
 # ----- data -----
