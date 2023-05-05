@@ -25,7 +25,6 @@ puct=0.2
 num_simulations=30
 
 # ----- controller -----
-
 controller_exp_dir="${base_dir}/exp/Controller/Iter0/pGhkkrVa"
 controller_model_name="step9375_model.pth"
 

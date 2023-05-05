@@ -1,4 +1,4 @@
-base_dir=<>
+base_dir=<FAME>
 cd ${base_dir}/code
 
 data_dir=${base_dir}/data/ControllerData
@@ -19,8 +19,9 @@ python -m torch.distributed.launch --nproc_per_node=4 Controller.py \
 
 
 ### ----- Iteration X -----
-### for X > 0, use reason_EBQA.sh to reason on the EntailmentBankQA training split, 
-### and then add the filtered prediction results from previous iterations in the train_data
+### For X > 0, use reason_EBQA.sh to reason on the EntailmentBankQA training split, 
+### and then add the filtered prediction results from previous iterations in the train_data.
+### We also provide our iterative training data in 'data/ControllerData/Iterative_Training_Data'.
 
 # export CUDA_VISIBLE_DEVICES=0,1,2,3
 # python -m torch.distributed.launch --nproc_per_node=4 Controller.py \

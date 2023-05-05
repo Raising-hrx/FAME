@@ -1,5 +1,6 @@
 # FAME
-An implementation for "Faithful Question Answering with Monte-Carlo Planning"
+An implementation for [Faithful Question Answering with Monte-Carlo Planning](https://arxiv.org/abs/2305.02556).
+
 
 <p align="center">
 <img src="imgs/intro.jpg" alt="FAME" width="500"/>
@@ -75,7 +76,7 @@ sh scripts/training_scripts/train_StepScorer.sh
 @inproceedings{hong2023fame,
   title={Faithful Question Answering with Monte-Carlo Planning},
   author={Ruixin Hong, Hongming Zhang, Hong Zhao, Dong Yu and Changshui Zhang},
-  booktitle={The 61st Annual Meeting of the Association for Computational Linguistics (ACL)},
+  booktitle={The 61st Annual Meeting of the Association for Computational Linguistics ({ACL})},
   year={2023}
 }
 ```

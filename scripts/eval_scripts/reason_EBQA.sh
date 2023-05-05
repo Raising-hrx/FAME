@@ -4,7 +4,9 @@ base_dir="FAME"
 code_dir="${base_dir}/code"
 
 # ----- data -----
-data_split="test"
+data_split="test"   # evaluate on the test split 
+# data_split="dev"  # use the dev split to select the model checkpoint and hyper-parameters
+# data_split="train" # use the train split to generate Verifier-Guided Iterative Training data
 data_path="${base_dir}/data/EntailmentBankQA/dataset/task_3/${data_split}.jsonl"
 task='QA'
 
